@@ -16,12 +16,7 @@ sem_t semAgente,semTabaco,semFosforo,semPapel;
 int main(int argc, char *argv[]){
 	
 	pthread_t thread_Tabaco, thread_Fosforo, thread_Papel, thread_Agente;
-
-	//char *msgTabaco="THREAD TABACO iniciada.";
-	//char *msgFosforo="THREAD FOSFORO iniciada.";
-	//char *msgPapel="THREAD PAPEL iniciada.";
-	//char *msgAgente="THREAD AGENTE iniciada.";
-
+	
 	sem_init(&semAgente,0,0);
 	sem_init(&semTabaco,0,0);
 	sem_init(&semFosforo,0,0);
