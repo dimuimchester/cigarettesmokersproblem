@@ -104,7 +104,6 @@ void fosforo(void *msgThread){
 		printf("Mesa Liberada!\n");
 		sem_post(&semAgente);
 		printf("SMOKER Fosforo da uma baforada.\n");
-
 	}
 }
 
