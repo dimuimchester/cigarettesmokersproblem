@@ -89,7 +89,7 @@ void tabaco (void *msgThread){
 		printf("Smoker Tabaco pega o PAPEL e o FOSFORO\n");
 		printf("Mesa Liberada!\n");
 		sem_post(&semAgente);
-		printf("SMOKER Tabaco da uma baforada.\n");
+		printf("SMOKER Tabaco esta fumando.\n");
 	}			
 }
 
@@ -103,7 +103,7 @@ void fosforo(void *msgThread){
 		printf("Smoker Fosforo pega o PAPEL e o TABACO\n");
 		printf("Mesa Liberada!\n");
 		sem_post(&semAgente);
-		printf("SMOKER Fosforo da uma baforada.\n");
+		printf("SMOKER Fosforo esta fumando.\n");
 	}
 }
 
@@ -116,6 +116,6 @@ void papel(void *msgThread){
 		printf("Smoker Papel pega o TABACO e o FOSFORO\n");
 		printf("Mesa Liberada!\n");
 		sem_post(&semAgente);
-		printf("SMOKER Papel da uma baforada.\n");
+		printf("SMOKER Papel esta fumando.\n");
 	}
 }
